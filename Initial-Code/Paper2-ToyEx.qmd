@@ -674,9 +674,7 @@ Filter CA counties, attach county names to measurements
 preds = readRDS("smokePM2pt5_predictions_daily_county_20060101-20201231.rds")
 
 # Load counties
-us_counties = read_sf("tl_2019_us_county.shp")
-
-ca_geoinfo = us_counties %>% filter(STATEFP == "06")
+ca_geoinfo = readRDS("ca_geodata.rds")
 
 ca_geoid_counties = ca_geoinfo %>% select(GEOID,NAME)
 
