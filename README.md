@@ -1,3 +1,7 @@
 # timevarying-causal-KGR
+
+Code for implementing a causal inference analysis on a continuous, time varying treatment using my KGR-SKATER framework and G-methods for spatiotemporal causal inference.
+
+Authors: Jeffrey Wu, Alex Franks, Gareth W Peters
  
-In the second project, we want to apply our procedure in a causal inference setting. We use our procedure to make predictions for the number of respiratory related hospitalizations in regions that experienced a wildfire, based on the observed data from regions that did not experience a wildfire. These predictions can be thought of as "missing" counterfactual outcomes i.e. outcomes if no wildfire had occurred in a given area. Therefore, we will be able to make a comparison and ascertain the causal effect of wildfires on respiratory related comorbidities.
+In my second project, I will apply our KGR-SKATER procedure to a causal inference analysis. Instead of just modeling respiratory related mortality like in my first project, in this one, I will specifically be evaluating the direct effects of wildfire specific PM 2.5 on respiratory related mortality in California from 2014 to 2019. In order to extend existing causal analyses in this area, the treatment will be defined as a time varying, continuous variable, which adds complications that preclude traditional causal inference methods from being applicable, these nuances are explained in section III of Hernan and Robins' _What If?_ textbook (insert citation). 
